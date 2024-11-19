@@ -52,7 +52,7 @@ Here is the result that you should get:
 <figure><img src="../.gitbook/assets/image (11).png" alt="" width="375"><figcaption></figcaption></figure>
 
 {% hint style="warning" %}
-The messageBundle that you provide as argument of the `createUseI18n` function must be statically valuable. You can't import from external files. All the translations must be declared inline.\
+The translations that you provide to the `i18nBuilder` must be statically valuable. You can't import from external files. All the translations must be declared inline.\
 This is because Keycloakify will analyze your code at build time to make Keycloak aware of your modifications of the base messages so that server side generated feedback messages can use your translations.
 
 ![](<../.gitbook/assets/image (47).png>)\
