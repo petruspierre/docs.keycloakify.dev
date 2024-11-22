@@ -2,7 +2,7 @@
 
 If you don't have Storybook in your project you can also test your theme with the dev server.
 
-To do that, just uncomment some line in your entrypoint:
+To do that, just uncomment some line in your entry point:
 
 {% tabs %}
 {% tab title="React – Vite" %}
@@ -147,8 +147,8 @@ import { appConfig } from './app.config';
 {% endtab %}
 {% endtabs %}
 
-The pageId parameter of the getKcContextMock let you decide what page you want to test.\
-The overrides parameter let you modify the the default kcContext mock for the page.\
+The pageId parameter of the getKcContextMock lets you decide what page you want to test.\
+The overrides parameter lets you modify the default kcContext mock for the page.\
 \
 For example you can overwrite the kcContext.locale.currentLanguageTag to preview your page in a different language.
 
