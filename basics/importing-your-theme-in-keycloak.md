@@ -1,6 +1,6 @@
 # Activating your Theme in Keycloak
 
-Now that you have your theme as a .jar file, let's see how you can import it in Keycloak so that it appears in the dropdown list for selecting theme in the Keycloak Admin console.
+Now that you have your theme as a .jar file, let's see how you can import it in Keycloak so that it appears in the dropdown list for selecting a theme in the Keycloak Admin console.
 
 To configure your Theme in the Keycloak server follow the specific instruction depending on the way your Keycloak is deployed
 
@@ -71,8 +71,8 @@ EOF
 
 docker build -t docker-keycloak-with-theme .
 docker run \
-    -e KEYCLOAK_ADMIN=admin \
-    -e KEYCLOAK_ADMIN_PASSWORD=admin \
+    -e KC_BOOTSTRAP_ADMIN_USERNAME=admin \
+    -e KC_BOOTSTRAP_ADMIN_PASSWORD=admin \
     -p 8080:8080 \
     docker-keycloak-with-theme
 </code></pre>
@@ -252,15 +252,15 @@ This code will provide you with a 5% discount, and we will also receive 5%, whic
 ## Enabeling globally on your realm
 
 {% hint style="warning" %}
-In any senario you should never use the Keycloak reserved realm (master) for your application.\
+In any scenario, you should never use the Keycloak reserved realm (master) for your application.\
 Instead it is recommended to create one.
 {% endhint %}
 
 <figure><img src="../.gitbook/assets/image (155).png" alt=""><figcaption><p>Keycloak settings to set the Theme</p></figcaption></figure>
 
-The first options is to enable the your themes at the realm level, which mean every applications that uses this realm will get this theme applied.
+The first option is to enable your themes at the realm level, which means that every application that uses this realm will get this theme applied.
 
-* Select your realm it the top left corner
+* Select your realm at the top left corner
 * \-> Realm settings
 * \-> "Themes" tab
 
@@ -272,10 +272,10 @@ Here you'll be able to select your login, account and email theme.
 
 
 
-The login theme can be applied at the client level. You have typically one Keycloak client per web applications.  \
+The login theme can be applied at the client level. You typically have one Keycloak client per web application.  \
 Setting the login theme at the client level means that each application of your realm can have different login/register pages. This comes in handy if you're implementing [Theme Variants](../in-depth-configuration/theme-variants.md).
 
-To enable a login theme on one of your client:
+To enable a login theme on one of your clients:
 
 * Select your realm in the top left corner
 * \-> Clients
