@@ -1,4 +1,4 @@
-# ⚠️ Limitations
+# Limitations
 
 ### Admin Console Theme not supported
 

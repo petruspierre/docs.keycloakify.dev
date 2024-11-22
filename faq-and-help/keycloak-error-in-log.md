@@ -1,4 +1,4 @@
-# 🛑 Errors Keycloak in Logs
+# Why are there errors in Keycloak Log?
 
 If you ever encounter one of these errors:
 
