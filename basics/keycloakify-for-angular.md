@@ -4,8 +4,8 @@
 
 Efforts have been made to integrate **Angular** with **Keycloakify**, providing two starter projects to help you get started:
 
-* [Keycloakify Starter Angular](https://github.com/keycloakify/keycloakify-starter-angular)
 * [Keycloakify Starter Angular Vite](https://github.com/keycloakify/keycloakify-starter-angular-vite)
+* [Keycloakify Starter Angular Webpack](https://github.com/keycloakify/keycloakify-starter-angular)
 
 ### Important Considerations
 

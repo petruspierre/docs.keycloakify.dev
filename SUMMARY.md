@@ -13,7 +13,7 @@
 ## 🎨 In-depth customization
 
 * [Internationalization](in-depth-customization/i18n/README.md)
-  * [Using Keycloakify I18N](in-depth-customization/i18n/base-principles.md)
+  * [Using Keycloakify I18n](in-depth-customization/i18n/base-principles.md)
   * [Adding New Translation Messages Or Changing The Default Ones](in-depth-customization/i18n/adding-new-translation-messages-or-changing-the-default-ones.md)
   * [Adding Support for Extra Languages](in-depth-customization/i18n/adding-support-for-extra-languages.md)
   * [Adding a Language in a Keycloak Server](in-depth-customization/i18n/adding-a-language-in-a-keycloak-server.md)
@@ -71,7 +71,7 @@
   * [startKeycloakOptions](in-depth-configuration/configuration-options/startkeycloakoptions.md)
   * [themeVersion](in-depth-configuration/configuration-options/themeversion-1.md)
   * [postBuild](in-depth-configuration/configuration-options/postbuild.md)
-  * [XDG\_CACHE\_HOME](in-depth-configuration/configuration-options/xdg\_cache\_home.md)
+  * [XDG\_CACHE\_HOME](in-depth-configuration/configuration-options/xdg_cache_home.md)
   * [kcContextExclusionsFtl](in-depth-configuration/configuration-options/kccontextexclusionsftl.md)
   * [keycloakifyBuildDirPath](in-depth-configuration/configuration-options/keycloakifybuilddirpath.md)
   * [groupId](in-depth-configuration/configuration-options/groupid.md)

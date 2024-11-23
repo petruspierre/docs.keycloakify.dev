@@ -1,5 +1,9 @@
 # Angular Workspace
 
+{% hint style="info" %}
+This tutorial requires some experience with Angular. The steps are straight forward but they might require some configuration depending on your project.
+{% endhint %}
+
 ## Integrating Keycloakify into an Angular Workspace
 
 Let's assume you have a monorepo project where sub applications are stored in the **projects/** directory.

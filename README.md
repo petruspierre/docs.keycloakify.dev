@@ -73,7 +73,7 @@ Create this file: &#x20;
 ```
 {% endcode %}
 
-The import it by adding this line at the top of the KcPage.tsx file:&#x20;
+Make sure your main.css is imported here:
 
 <pre class="language-tsx" data-title="src/login/KcPage.tsx"><code class="lang-tsx"><strong>import "./main.css";
 </strong></code></pre>
@@ -87,14 +87,12 @@ The import it by adding this line at the top of the KcPage.tsx file:&#x20;
 }
 ```
 {% endcode %}
-
-
 {% endtab %}
 {% endtabs %}
 
 <figure><img src=".gitbook/assets/grafik (3).png" alt=""><figcaption></figcaption></figure>
 
-There are several methods for customizing your theme. We recommend using a different Base Theme for example with MUI or Angular Material. Also you can test your theme in a Keycloak Container:
+There are several methods for customizing your theme. We recommend doing CSS based styling. Also you can test your theme in a Keycloak Container:
 
 {% content-ref url="basics/testing-your-theme/" %}
 [testing-your-theme](basics/testing-your-theme/)

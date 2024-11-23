@@ -10,8 +10,8 @@ If you can make it work, CSS Level Customization is preferable over component le
 
 If you want to use a component library like MUI, ShadeCN/UI or Antlr, this is not the approach that you should favor you should instead checkout [Component Level customizatio](../component-level-customization/)n or [Customizing using a Keycloakify Theme Plugin](../customizing-using-a-keycloakify-theme-plugin.md).
 
-{% content-ref url="basic-example.md" %}
-[basic-example.md](basic-example.md)
+{% content-ref url="removing-the-default-styles.md" %}
+[removing-the-default-styles.md](removing-the-default-styles.md)
 {% endcontent-ref %}
 
 [^1]: Example: Emotion or tss-react.

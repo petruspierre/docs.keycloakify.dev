@@ -62,16 +62,12 @@ First we need to add the few links tag we got from from Google Fonts in our HTML
 {% endtab %}
 {% endtabs %}
 
-
-
 The fonts must also be imported in Storybook, so we add the links in the .storybook/preview-head.html as well:
 
 <pre class="language-html" data-title=".storybook/preview-head.html"><code class="lang-html">&#x3C;style>
     body.sb-show-main.sb-main-padded {
         padding: 0;
     }
-    
-    /* ... */
 &#x3C;/style>
 
 <strong>&#x3C;link rel="preconnect" href="https://fonts.googleapis.com">
@@ -80,8 +76,6 @@ The fonts must also be imported in Storybook, so we add the links in the .storyb
 </strong></code></pre>
 
 Then all we have to do is apply the Font font family, in this example we will use vanilla CSS but you can of course use your favorite styling solution.
-
-
 
 {% tabs %}
 {% tab title="React" %}
@@ -96,22 +90,35 @@ Then all we have to do is apply the Font font family, in this example we will us
 {% endtab %}
 
 {% tab title="Angular" %}
-```typescript
-// styles.css
+{% code title="src/login/styles.css" %}
+```css
 .kcHeaderWrapperClass {
   /* NOTE: We would use `body {` if we'd like the font to be applied to everything. */
   font-family: "Playwrite NL", cursive;
 }I
 ```
+{% endcode %}
 {% endtab %}
 {% endtabs %}
 
+<details>
 
+<summary>My CSS is not showing</summary>
+
+Make sure you have your root CSS file configured
+
+In React:
 
 <pre class="language-tsx" data-title="src/login/KcPage.tsx"><code class="lang-tsx"><strong>import "./main.css";
 </strong>import { Suspense, lazy } from "react";
 // ...
 </code></pre>
+
+In Angular
+
+
+
+</details>
 
 That's it!
 

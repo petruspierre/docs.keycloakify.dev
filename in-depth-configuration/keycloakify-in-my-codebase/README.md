@@ -10,29 +10,5 @@ One of the powerful aspects of Keycloakify is its ability to let you reuse compo
 
 There is two main approach to integrate Keycloakify into your project, pick the one that you think will work best for you.
 
-{% tabs %}
-{% tab title="Collocation" %}
-If you happen to be developing a React Single Page Application with Vite or Webpack you can install Keycloakify directly within your project!
+<table data-card-size="large" data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><strong>React SPA</strong></td><td></td><td>If you happen to be developing a React Single Page Application with Vite or Webpack you can install Keycloakify directly within your project!</td><td><a href="in-your-react-project/">in-your-react-project</a></td></tr><tr><td><strong>Monorepo</strong></td><td><p></p><p>Use this when for example:</p><ul><li>You are using Next.js or another meta framwork that involves server side rendering.</li><li>You are using Angular Workspaces</li></ul></td><td></td><td><a href="as-a-subproject-of-your-monorepo/">as-a-subproject-of-your-monorepo</a></td></tr></tbody></table>
 
-This approach make it easy to reuse style and component of your main application in your Keycloakify theme if you are not in a mono-repository setup. &#x20;
-
-{% content-ref url="in-your-react-project/" %}
-[in-your-react-project](in-your-react-project/)
-{% endcontent-ref %}
-{% endtab %}
-
-{% tab title="Monorepo" %}
-There are many cases where the colocation apprach is not feasable, for example:
-
-* You are using Next.js or another meta framwork that involves server side rendering.
-* You are using a framework other than React (Vue, Angular, Svelt ...)
-
-Beside, you might prefer to to keep your Keycloak theme as an isolated component of your app.
-
-In this case you can integrate Keycloakify...
-
-{% content-ref url="as-a-subproject-of-your-monorepo/" %}
-[as-a-subproject-of-your-monorepo](as-a-subproject-of-your-monorepo/)
-{% endcontent-ref %}
-{% endtab %}
-{% endtabs %}

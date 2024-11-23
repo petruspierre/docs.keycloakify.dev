@@ -4,7 +4,7 @@
 
 <summary>Angular</summary>
 
-The register page can be customized in Angular. As soon as you run `npx keycloakify eject-page` and pick the register page all its sub components are also ejected. They can be found under "components":\
+The register page can be customized in Angular. As soon as you run `npx keycloakify eject-page` and pick the register page all its sub components are also ejected into your project:\
 ![](<../.gitbook/assets/image (1).png>)
 
 </details>

@@ -19,19 +19,7 @@ In this approach you'll use your favorite styling solution it can be:
 
 If you want to use your React component library like [Shadecn/UI](https://ui.shadcn.com/), [MUI](https://mui.com/) or [Ant](https://ant.design/) you have to go down at the component level.&#x20;
 
-{% tabs %}
-{% tab title="React" %}
 If you want to use your React component library like [Shadecn/UI](https://ui.shadcn.com/), [MUI](https://mui.com/) or [Ant](https://ant.design/) you have to go down at the component level.&#x20;
-
-
-{% endtab %}
-
-{% tab title="Angular" %}
-
-{% endtab %}
-{% endtabs %}
-
-
 
 {% content-ref url="component-level-customization/" %}
 [component-level-customization](component-level-customization/)
@@ -40,4 +28,3 @@ If you want to use your React component library like [Shadecn/UI](https://ui.sha
 ### Angular  Component library
 
 You can seamlessly use Angular Material and other component libraries with Keycloakify Angular. Simply integrate them as you normally would in any Angular project.
-
