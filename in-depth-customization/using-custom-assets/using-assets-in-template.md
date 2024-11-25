@@ -1,2 +1,0 @@
-# Using assets in Template
-

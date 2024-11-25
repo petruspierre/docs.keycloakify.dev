@@ -2,7 +2,7 @@
 description: Extending the KcContext type definition
 ---
 
-# Some values I need are missing in kcContext type definitions?
+# 😖 Some values you need are missing from in kcContext type definitions?
 
 The kcContext type definitions only includes what the default pages actually uses. &#x20;
 

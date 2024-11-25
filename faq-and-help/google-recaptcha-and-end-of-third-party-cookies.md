@@ -1,6 +1,6 @@
-# Why do I get reCaptcha warnings?
+# 🍪 Google reCaptcha and End of third-party Cookies
 
-You mightsee all theses warning in your register page using reCaptcha:
+You might be r to see all theses warning in your register page using reCaptcha:
 
 <figure><img src="../.gitbook/assets/image (118).png" alt=""><figcaption></figcaption></figure>
 

@@ -1,4 +1,4 @@
-# Can I use react-hooks-form?
+# 🤓 Can I use react-hooks-form?
 
 You can but it's probably not a good idea.\
 The Keycloak server is authoritative for defining if a given input is valid, not your theme.\

@@ -1,7 +1,7 @@
-# How can I access Realm Attributes?
+# 🔖 Accessing the Realm Attributes
 
-{% content-ref url="../in-depth-configuration/taking-ownership-of-the-script-responsible-for-generating-the-kccontext.md" %}
-[taking-ownership-of-the-script-responsible-for-generating-the-kccontext.md](../in-depth-configuration/taking-ownership-of-the-script-responsible-for-generating-the-kccontext.md)
+{% content-ref url="../taking-ownership-of-the-script-responsible-for-generating-the-kccontext.md" %}
+[taking-ownership-of-the-script-responsible-for-generating-the-kccontext.md](../taking-ownership-of-the-script-responsible-for-generating-the-kccontext.md)
 {% endcontent-ref %}
 
-Note that if you are considering using the Realm Attributes you might find using [environment variables](../in-depth-configuration/configuration-options/environmentvariables.md) more practical.
+Note that if you are considering using the Realm Attributes you might find using [environment variables](../configuration-options/environmentvariables.md) more practical.
