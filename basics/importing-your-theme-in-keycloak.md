@@ -11,17 +11,17 @@ git clone https://github.com/keycloakify/keycloakify-starter
 cd keycloakify-starter
 # Just to make sure these instructions remain relevant in the future
 # We pin the version of the starter we are using.  
-git checkout 2553c38272fc76efba8f88c9add6de5ce696ba9d
+git checkout c6511feee3d9471f6ea67bc5176e28150ab951ef
 yarn
 yarn build-keycloak-theme
 
 docker run \
     -p 8080:8080 \
     --name my-keycloak \
-    -e KEYCLOAK_ADMIN=admin \
-    -e KEYCLOAK_ADMIN_PASSWORD=admin \
-<strong>    -v "./dist_keycloak/keycloak-theme-for-kc-22-and-above.jar":/opt/keycloak/providers/keycloak-theme.jar \
-</strong>    quay.io/keycloak/keycloak:25.0.4 \
+    -e KC_BOOTSTRAP_ADMIN_USERNAME=admin \
+    -e KC_BOOTSTRAP_ADMIN_PASSWORD=admin \
+<strong>    -v "./dist_keycloak/keycloak-theme-for-kc-all-other-versions.jar":/opt/keycloak/providers/keycloak-theme.jar \
+</strong>    quay.io/keycloak/keycloak:26.0.4 \
     start-dev
 </code></pre>
 
@@ -44,7 +44,7 @@ git clone https://github.com/keycloakify/keycloakify-starter
 cd keycloakify-starter
 # Just to make sure these instructions remain relevant in the future
 # We pin the version of the starter we are using.  
-git checkout 2553c38272fc76efba8f88c9add6de5ce696ba9d
+git checkout c6511feee3d9471f6ea67bc5176e28150ab951ef
 cd ..
 
 cat &#x3C;&#x3C; EOF > ./Dockerfile
@@ -58,9 +58,9 @@ RUN yarn install --frozen-lockfile
 COPY ./keycloakify-starter/ /opt/app/
 RUN yarn build-keycloak-theme
 
-FROM quay.io/keycloak/keycloak:latest as builder
+FROM quay.io/keycloak/keycloak:26.0.4 as builder
 WORKDIR /opt/keycloak
-<strong>COPY --from=keycloakify_jar_builder /opt/app/dist_keycloak/keycloak-theme-for-kc-22-and-above.jar /opt/keycloak/providers/
+<strong>COPY --from=keycloakify_jar_builder /opt/app/dist_keycloak/keycloak-theme-for-kc-all-other-versions.jar /opt/keycloak/providers/
 </strong>RUN /opt/keycloak/bin/kc.sh build
 
 FROM quay.io/keycloak/keycloak:latest
