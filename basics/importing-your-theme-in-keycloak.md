@@ -4,6 +4,12 @@ Now that you have your theme as a .jar file, let's see how you can import it in 
 
 To configure your Theme in the Keycloak server follow the specific instruction depending on the way your Keycloak is deployed
 
+{% hint style="warning" %}
+Takes the following instructions with a grain of salt.  \
+They are contributed by the comunity and might not be up to date.  \
+They'll give you an idea of how it's suposed to be done but you'd be better of looking for the official documentation on how to load keycloak extentions. &#x20;
+{% endhint %}
+
 {% tabs %}
 {% tab title="Docker" %}
 <pre class="language-sh"><code class="lang-sh">cd ~/github
@@ -83,18 +89,14 @@ In this Docker file we use `ENTRYPOINT ["/opt/keycloak/bin/kc.sh", "start-dev"]`
 {% endtab %}
 
 {% tab title="Docker Compose" %}
-* Create `docker-compose.yml` for keycloak
-* build custom theme from keycloakify and get `.jar` copy and put it some where in same `docker-compose.yml` directory
-* in `docker-compose.yml` for example .jar is in themes
+Let's assume that you have the following directory structure: &#x20;
 
 ```
-volumes: 
-      - ./themes:/opt/keycloak/providers/
+./docker-compose.yaml
+./themes/keycloak-theme-for-kc-all-other-versions.jar # This is the file generated in `dist_keycloak` when running `yarn build-keycloak-theme` 
 ```
 
-^^^ this volums .jar in themes in to `opt/keycloak/providers/` in docker container
-
-{% code title="docker-compose.yml" %}
+{% code title="docker-compose.yaml" %}
 ```yaml
 version: '3.7'
 
@@ -114,7 +116,7 @@ services:
 
   keycloak:
 
-    image: quay.io/keycloak/keycloak:25.0.2
+    image: quay.io/keycloak/keycloak:26.0.4
     command: start-dev
 
     environment:
@@ -125,8 +127,8 @@ services:
       KC_HOSTNAME_STRICT_HTTPS: false
       KC_HOSTNAME_STRICT: false
       
-      KEYCLOAK_ADMIN: ${KEYCLOAK_ADMIN}
-      KEYCLOAK_ADMIN_PASSWORD: ${KEYCLOAK_ADMIN_PASSWORD}
+      KC_BOOTSTRAP_ADMIN_USERNAME: ${KEYCLOAK_ADMIN}
+      KC_BOOTSTRAP_ADMIN_PASSWORD: ${KEYCLOAK_ADMIN_PASSWORD}
       KC_DB: postgres
       KC_DB_URL: jdbc:postgresql://postgres/${POSTGRES_DB}
       KC_DB_USERNAME: ${POSTGRES_USER}
