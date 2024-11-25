@@ -31,7 +31,7 @@ In this folder are listed the different configuration options you can use with K
 {% endcontent-ref %}
 
 {% content-ref url="xdg_cache_home.md" %}
-[xdg\_cache\_home.md](xdg\_cache\_home.md)
+[xdg\_cache\_home.md](xdg_cache_home.md)
 {% endcontent-ref %}
 
 {% content-ref url="kccontextexclusionsftl.md" %}

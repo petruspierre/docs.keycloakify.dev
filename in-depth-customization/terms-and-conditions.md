@@ -4,7 +4,7 @@ The Tems and Condition feature of Keycloak enables you to make new users of your
 
 {% embed url="https://storybook.keycloakify.dev/?path=/story/login-terms-ftl--default" %}
 
-<figure><img src="../.gitbook/assets/image (53).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (56).png" alt=""><figcaption></figcaption></figure>
 
 ## Enabling the feature
 

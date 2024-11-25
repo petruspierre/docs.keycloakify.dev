@@ -60,7 +60,7 @@ First you'd eject the Template:
 npx keycloakify eject-page # Select login -> Template.tsx
 ```
 
-<figure><img src="../../../.gitbook/assets/image (36).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (39).png" alt=""><figcaption></figcaption></figure>
 
 This will create a src/login/Template.tsx file in your project.
 
@@ -70,11 +70,7 @@ Let's use this placeholder for the demo: [logo.png](https://github.com/keycloaki
 
 We put the file in public/img/logo.png
 
-<div align="center" data-full-width="false">
-
-<figure><img src="../../../.gitbook/assets/image (37).png" alt="" width="563"><figcaption></figcaption></figure>
-
-</div>
+<div align="center" data-full-width="false"><figure><img src="../../../.gitbook/assets/image (40).png" alt="" width="563"><figcaption></figcaption></figure></div>
 
 Now let's edit the template to import the file:
 
@@ -123,14 +119,14 @@ baseHref = inject(APP_BASE_HREF);
 
 You can see the result by running `npx keycloakify start-keycloak`
 
-<figure><img src="../../../.gitbook/assets/image (38).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (41).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 If you ever need to SSH into the Keycloak server and hot swipe the image you can find it at
 
 **/opt/keycloak/themes/**[**\<name of your theme>**](../../../in-depth-configuration/configuration-options/themename.md)**/login/resources/dist/img/logo.png**
 
-<img src="../../../.gitbook/assets/image (39).png" alt="" data-size="original">
+<img src="../../../.gitbook/assets/image (42).png" alt="" data-size="original">
 {% endhint %}
 
 ## Letting the bundle handle your import
@@ -140,7 +136,7 @@ A nice solution for this is to let Vite or Webpack handle the import.
 
 Let's move our logo.png to **/src/login/assets/logo.png**
 
-<figure><img src="../../../.gitbook/assets/image (40).png" alt="" width="336"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (43).png" alt="" width="336"><figcaption></figcaption></figure>
 
 Now let's update the imports:
 

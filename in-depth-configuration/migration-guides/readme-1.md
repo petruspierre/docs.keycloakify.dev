@@ -64,7 +64,7 @@ Keycloakify v6 now has a proper i18n api.
 
 ### Terms and conditions
 
-The message `termsTitle` ([_Terms and Conditions_ in en.ts](https://github.com/InseeFrLab/keycloakify/blob/f0ae5ea908e0aa42391af323b6d5e2fd371af851/src/lib/i18n/generated\_messages/18.0.1/login/en.ts#L66)) was replaced by a blank string in v5. If you want to do the same in v6 you have to use the new [i18n API](../../in-depth-customization/i18n/).
+The message `termsTitle` ([_Terms and Conditions_ in en.ts](https://github.com/InseeFrLab/keycloakify/blob/f0ae5ea908e0aa42391af323b6d5e2fd371af851/src/lib/i18n/generated_messages/18.0.1/login/en.ts#L66)) was replaced by a blank string in v5. If you want to do the same in v6 you have to use the new [i18n API](../../in-depth-customization/i18n/).
 
 ```diff
  useDownloadTerms({

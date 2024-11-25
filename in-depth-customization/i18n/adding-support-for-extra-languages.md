@@ -41,9 +41,9 @@ Let's see how to add support for an extra language so you can enable it in the K
 
 In this example we're going to add Hindi (hi).
 
-<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption><p>Hindi appear as a supported locales option in the Keycloak Account UI</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7).png" alt=""><figcaption><p>Hindi appear as a supported locales option in the Keycloak Account UI</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (5).png" alt="" width="375"><figcaption><p>Hindi appear as an option in the language select dropdown</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (8).png" alt="" width="375"><figcaption><p>Hindi appear as an option in the language select dropdown</p></figcaption></figure>
 
 To acheive this first step is to create a TypeScript file containing Hindi translation of all the default message keys. I sugest creating this file as `src/login/i18n.hi.ts` but it can be located anywhere under your src directory.
 
@@ -72,7 +72,7 @@ You can find the English translations in your repo at:&#x20;
 
 **node\_modules/keycloakify/src/login/i18n/messages\_defaultSet/en.ts**
 
-<figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="danger" %}
 **Do not customize the translations messages to fit your usecase**!&#x20;

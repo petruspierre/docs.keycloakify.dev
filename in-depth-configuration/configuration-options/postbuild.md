@@ -45,7 +45,7 @@ cd dist_keycloak/extracted
 jar -xf ../keycloak-theme-for-kc-25-and-above.jar
 ```
 
-<figure><img src="../../.gitbook/assets/image (64).png" alt=""><figcaption><p>Overview of the content of the jar extracted</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (67).png" alt=""><figcaption><p>Overview of the content of the jar extracted</p></figcaption></figure>
 
 ### Debugging
 

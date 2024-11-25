@@ -2,13 +2,13 @@
 
 In the Keycloak Admin Console you can enable localization by selecting a set of language that you wish to support. After that you should be able to select a language in your Login.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption><p>Languages in Keycloak Server</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption><p>Languages in Keycloak Server</p></figcaption></figure>
 
 {% hint style="info" %}
 The language that you want to support isn't in the default set? You can add support for it with Keycloakify. [See how](adding-support-for-extra-languages.md).
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/image (3) (1).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6).png" alt="" width="375"><figcaption></figcaption></figure>
 
 {% hint style="success" %}
 You shouldn't rely on the language select to let your users select their language. &#x20;

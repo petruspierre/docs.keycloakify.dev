@@ -81,8 +81,8 @@ import { bootstrapKcApplication } from './kc.gen';
 
 <strong>import { getKcContextMock } from './login/KcContextMock';
 </strong><strong>import { isDevMode } from '@angular/core';
-</strong><strong>
-</strong><strong>if (isDevMode()) {
+</strong>
+<strong>if (isDevMode()) {
 </strong><strong>    window.kcContext = getKcContextMock({
 </strong><strong>        pageId: 'register.ftl',
 </strong><strong>        overrides: {},
@@ -117,8 +117,8 @@ import { bootstrapKcApplication } from './kc.gen';
 import { appConfig } from './app.config';
 
 <strong>import { getKcContextMock } from './login/KcContextMock';
-</strong><strong>
-</strong><strong>if (import.meta.env.DEV) {
+</strong>
+<strong>if (import.meta.env.DEV) {
 </strong><strong>  window.kcContext = getKcContextMock({
 </strong><strong>    pageId: 'register.ftl',
 </strong><strong>    overrides: {},
@@ -185,7 +185,7 @@ ng serve
 {% endtab %}
 {% endtabs %}
 
-<figure><img src="../../.gitbook/assets/image (54).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (57).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="warning" %}
 When you're done testing, don't forget to comment back the import of the mock. Forgetting to do so will negatively impact the bundle size of your pages.

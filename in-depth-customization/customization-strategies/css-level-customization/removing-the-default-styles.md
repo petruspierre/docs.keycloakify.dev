@@ -140,5 +140,5 @@ export async function getKcPage(pageId: KcContext['pageId']): Promise&#x3C;KcPag
 
 However be aware that re-styling everything involves quite a bit of work:
 
-<figure><img src="../../../.gitbook/assets/image (31).png" alt="" width="375"><figcaption><p>The login page with doUseDefaultCss set to false</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (34).png" alt="" width="375"><figcaption><p>The login page with doUseDefaultCss set to false</p></figcaption></figure>
 

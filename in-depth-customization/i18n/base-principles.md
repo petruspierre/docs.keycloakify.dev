@@ -1,4 +1,4 @@
-# Using Keycloakify I18N
+# Using Keycloakify I18n
 
 {% hint style="info" %}
 This documentation explains how i18n works in the Login theme.\

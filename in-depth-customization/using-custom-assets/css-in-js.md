@@ -27,14 +27,14 @@ Let's see, as an example, the different ways you have to change the background i
 
 First let's [download a background image](https://coolbackgrounds.io/) an put it in our public directory:
 
-<figure><img src="../../.gitbook/assets/image (91).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (94).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 If you wish to do so, you can hot swipe assets that you have placed into your public directory in your Keycloak instance files at:
 
 **/opt/keycloak/themes/**[**\<name of your theme>**](../../in-depth-configuration/configuration-options/themename.md)**/\<login|account>/resources/dist**
 
-<img src="../../.gitbook/assets/image (94).png" alt="" data-size="original">
+<img src="../../.gitbook/assets/image (97).png" alt="" data-size="original">
 {% endhint %}
 
 Let's see how we can apply the image using a CSS-in-JS. In this example we'll use [@emotion/css](https://emotion.sh/docs/introduction).
@@ -102,12 +102,12 @@ const classes = {
 
 Result (see [testing your theme](../../basics/testing-your-theme/)):
 
-<figure><img src="../../.gitbook/assets/image (92).png" alt=""><figcaption><p>Custom background successfully applied</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (95).png" alt=""><figcaption><p>Custom background successfully applied</p></figcaption></figure>
 
 Now let's go a little further, it's even better to let the bundler generate url for your imports instead of manually referencing files from your public directory.\
 So, let's move the background image in **src/login/assets/**:
 
-<figure><img src="../../.gitbook/assets/image (96).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (99).png" alt="" width="375"><figcaption></figcaption></figure>
 
 And in our code import it this way:
 

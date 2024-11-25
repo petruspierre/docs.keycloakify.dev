@@ -235,7 +235,7 @@ Then you can start your Keycloak server, your theme should be available in it!
 {% endtab %}
 
 {% tab title="Cloud-IAM" %}
-If you are utilizing a Keycloak instance managed by [Cloud-IAM](https://cloud-iam.com/?mtm\_campaign=keycloakify-deal\&mtm\_source=keycloakify-doc-header), importing themes and extensions is quite straightforward.
+If you are utilizing a Keycloak instance managed by [Cloud-IAM](https://cloud-iam.com/?mtm_campaign=keycloakify-deal\&mtm_source=keycloakify-doc-header), importing themes and extensions is quite straightforward.
 
 {% hint style="info" %}
 Uploading custom JAR files is only available with paid plans.
@@ -256,13 +256,13 @@ In any scenario, you should never use the Keycloak reserved realm (master) for y
 Instead it is recommended to create one.
 {% endhint %}
 
-<figure><img src="../.gitbook/assets/image (155).png" alt=""><figcaption><p>Keycloak settings to set the Theme</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (158).png" alt=""><figcaption><p>Keycloak settings to set the Theme</p></figcaption></figure>
 
 The first option is to enable your themes at the realm level, which means that every application that uses this realm will get this theme applied.
 
 * Select your realm at the top left corner
-* \-> Realm settings
-* \-> "Themes" tab
+* -> Realm settings
+* -> "Themes" tab
 
 Here you'll be able to select your login, account and email theme.
 
@@ -270,26 +270,21 @@ Here you'll be able to select your login, account and email theme.
 
 <summary>Enabling a theme for a specific client</summary>
 
-
-
-The login theme can be applied at the client level. You typically have one Keycloak client per web application.  \
+The login theme can be applied at the client level. You typically have one Keycloak client per web application.\
 Setting the login theme at the client level means that each application of your realm can have different login/register pages. This comes in handy if you're implementing [Theme Variants](../in-depth-configuration/theme-variants.md).
 
 To enable a login theme on one of your clients:
 
 * Select your realm in the top left corner
-* \-> Clients
-* \-> Select your client in the list
-* \-> Scroll down to "Login Theme" and select your theme.
+* -> Clients
+* -> Select your client in the list
+* -> Scroll down to "Login Theme" and select your theme.
 
 The account theme can only be enabled at the realm level; however, accessing the account pages requires authentication. If you don't want your user to inadvertently come across the default login theme when navigating to the account pages after their session has expired, you might want to enable your login theme on the "account-console" client.
 
 * Select your realm in the top left corner
-* \-> Clients
-* \-> Select "account console"
-* \-> Scroll down to "Login Theme" and select one of your login theme.
+* -> Clients
+* -> Select "account console"
+* -> Scroll down to "Login Theme" and select one of your login theme.
 
 </details>
-
-
-

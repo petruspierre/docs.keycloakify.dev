@@ -37,11 +37,11 @@ export default defineConfig({
 
 This will make the theme variant appear in the Keycloak admin select input:
 
-<figure><img src="../.gitbook/assets/image (73).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (76).png" alt=""><figcaption></figcaption></figure>
 
 In your code you'll be able to load different styles based on the value of `kcContext.themeName`:
 
-<figure><img src="../.gitbook/assets/image (34).png" alt=""><figcaption><p>NOTE: You need to <code>run npm run dev</code>, <code>npm run storybook</code> or <code>npm run build-keycloak-theme</code> for the types to be updated.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (37).png" alt=""><figcaption><p>NOTE: You need to <code>run npm run dev</code>, <code>npm run storybook</code> or <code>npm run build-keycloak-theme</code> for the types to be updated.</p></figcaption></figure>
 
 {% embed url="https://youtu.be/Nkoz1iD-HOA" %}
 Tutorial video
@@ -92,7 +92,7 @@ export { useI18n, type I18n };
 
 <figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption><p>"my-theme-1" view</p></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>"my-theme-2" view</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption><p>"my-theme-2" view</p></figcaption></figure>
 
 ## Email theme
 

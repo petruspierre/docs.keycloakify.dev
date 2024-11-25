@@ -12,7 +12,7 @@ Yes, **Keycloak 26 is supported**. Use the _keycloak-theme-for-kc-all-other-vers
 
 
 
-<figure><img src="../.gitbook/assets/image (164).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (167).png" alt="" width="375"><figcaption></figcaption></figure>
 
 However you might want to customize this behavior. If you know ahead of time what Keycloak you theme will using you can build only for this version using the `keycloakVersionTargets` build option.
 
