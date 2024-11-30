@@ -346,5 +346,3 @@ You want to copy and paste the dependencies into the package.json of your Keyclo
 The readme is generated automatically, you can trust that is always up do date.
 
 You migh wonder why there's only RC releases of @keycloakify/keycloak-account-ui, it's because we want to match the version number of the upstream package @keycloak/keycloak-account-ui but still be able to publish update when minor changes on the re-packaging distribution is needed. &#x20;
-
-##
