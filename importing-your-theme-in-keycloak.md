@@ -172,7 +172,7 @@ dependencies:
 Here we only list the relevant values:
 
 <pre class="language-yaml" data-title="values.yaml"><code class="lang-yaml">keycloak:
-  initContainers: |
+  initContainers:
     - name: realm-ext-provider
       image: curlimages/curl
       imagePullPolicy: IfNotPresent
@@ -181,49 +181,20 @@ Here we only list the relevant values:
       args:
         - -c
         - |
-<strong>          # Replace USER and PROJECT.    
-</strong><strong>          curl -L -f -S -o /extensions/keycloakify-starter.jar https://github.com/USER/PROJECT/releases/latest/download/keycloak-theme-for-kc-24.jar
+<strong>          # Replace USER and PROJECT, use the correct version of the jar for the keycloak version you are deploying    
+</strong><strong>          curl -L -f -S -o /extensions/keycloak-theme.jar https://github.com/USER/PROJECT/releases/download/v11.3.16/keycloak-theme-for-kc-22-to-25.jar
 </strong>
       volumeMounts:
         - name: extensions
           mountPath: /extensions
 
-  extraVolumeMounts: |
+  extraVolumeMounts:
     - name: extensions
       mountPath: /opt/bitnami/keycloak/providers
 
-  extraVolumes: |
+  extraVolumes:
     - name: extensions
       emptyDir: {}
-</code></pre>
-
-If you are using [Bitnami's Keycloak Helm chart](https://github.com/bitnami/charts/tree/main/bitnami/keycloak) version **24.0.5** and up, you have to mount /emptydir/app-providers-dir. Detail at [How to add custom provider](https://github.com/bitnami/charts/issues/15930#issuecomment-2478437680)
-
-<pre class="language-yaml" data-title="values.yaml"><code class="lang-yaml">keycloak:
-  initContainers: |
-    - name: keycloak-plugin
-      image: curlimages/curl
-      imagePullPolicy: IfNotPresent
-      command:
-        - sh
-      args:
-        - -c
-        - |
-<strong>          # Replace USER and PROJECT.    
-</strong><strong>          curl -L -f -S -o /extensions/keycloakify-starter.jar https://github.com/USER/PROJECT/releases/latest/download/keycloak-theme-for-kc-24.jar
-</strong>
-      volumeMounts:
-        - name: empty-dir
-          mountPath: /emptydir
-
-  extraVolumeMounts:
-    - mountPath: /opt/bitnami/keycloak/providers
-      name: empty-dir
-      subPath: app-providers-dir
-    
-  extraVolumes:
-    - emptyDir: {}
-      name: empty-dir
 </code></pre>
 
 Read [this section of the starter project readme](https://github.com/keycloakify/keycloakify-starter?tab=readme-ov-file#github-actions) to learn how to get GitHub Action to publish your theme's JAR as assets of your GitHub release.
